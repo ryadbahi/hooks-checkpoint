@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background: #1b1b2f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff5733;
+}
+
+/* MovieCard Styling */
+.movie-card {
+  background: #2c2c54;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.movie-card h3 {
+  font-size: 1.4rem;
+  color: #ff5733;
+}
+
+.movie-card p {
+  font-size: 1rem;
+  color: #e1e1e6;
+}
+
+.movie-card span {
+  font-size: 1.2rem;
+  color: #ffbd39;
+}
+
+/* MovieList Styling */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #c04b2e;
+}
+
+/* Filter Styling */
+.filter {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.filter input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.filter input[type="range"] {
+  width: 200px;
+  cursor: pointer;
+}
+
+.filter input[type="text"]:focus,
+.filter input[type="range"]:focus {
+  outline: none;
+  border: 2px solid #ff5733;
+}
+
+/* AddMovieForm Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background-color: #2c2c54;
+  color: white;
+}
+
+form button {
+  background-color: #ff5733;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #c04b2e;
+}
