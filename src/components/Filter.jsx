@@ -1,17 +1,25 @@
-function Filter({ onFilterChange }) {
+import React from "react";
+
+const Filter = ({ searchTerm, setSearchTerm, rating, setRating }) => {
   return (
     <div className="filter">
       <input
         type="text"
-        placeholder="Search Universes"
-        onChange={(e) => onFilterChange({ title: e.target.value })}
+        placeholder="Search by title..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
       />
       <input
         type="range"
-        min="1"
+        min="0"
         max="10"
-        onChange={(e) => onFilterChange({ rating: e.target.value })}
+        step="0.1"
+        value={rating}
+        onChange={(e) => setRating(e.target.value)}
       />
+      <span>Rating: {rating}</span>
     </div>
   );
-}
+};
+
+export default Filter;

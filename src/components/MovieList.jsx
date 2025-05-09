@@ -1,10 +1,14 @@
-function MovieList({ movies, loadMore }) {
+import React from "react";
+import MovieCard from "./MovieCard";
+
+const MovieList = ({ movies }) => {
   return (
     <div className="movie-list">
-      {movies.map((movie, index) => (
-        <MovieCard key={index} {...movie} />
+      {movies.map((movie) => (
+        <MovieCard key={movie.id} movie={movie} />
       ))}
-      <button onClick={loadMore}>Load More Universes</button>
     </div>
   );
-}
+};
+
+export default MovieList;
