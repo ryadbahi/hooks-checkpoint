@@ -40,7 +40,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>🎬 My Movie App</h1>
+      <h1>🎬 CineVerse Movie</h1>
       <Filter
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
